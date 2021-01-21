@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>fori</Title>
+            <Author>Daniel Monzonis</Author>
+            <Description>For loop on the index of a MFC container and get the actual value.</Description>
+            <Shortcut>fori</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="CPP">
+                <![CDATA[
+                    for (INT_PTR lIdx = 0; lIdx < $container$.GetSize(); lIdx++)
+                    {
+                        $type$ $elem$ = $container$[lIdx];
+                    }
+                ]]>
+            </Code>
+            <Declarations>
+                <Object>
+                    <ID>container</ID>
+                    <ToolTip>Name of the MFC container.</ToolTip>
+                    <Default>container</Default>
+                </Object>
+                <Object>
+                    <ID>type</ID>
+                    <ToolTip>Type of the elements in the container.</ToolTip>
+                    <Default>U_INT4</Default>
+                </Object>
+                <Object>
+                    <ID>elem</ID>
+                    <ToolTip>Name for the elements in the container.</ToolTip>
+                    <Default>elem</Default>
+                </Object>
+            </Declarations>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
